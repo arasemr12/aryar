@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+html,
+body,
+#__nuxt,
+#__layout{
+    width: 100%;
+    height: 100%;
+    background: rgb(17 24 39);
+}
+
+.navlink{
+    padding: 10px 20px;
+    background: rgb(31 41 55);
+    border-radius: 4px;
+    transition: .3s all;
+}
+
+.navlink:hover{
+    background: rgb(55 65 81);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
