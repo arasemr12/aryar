@@ -13,10 +13,9 @@ app.get('/users/:id',async(req,res) => {
     
     let activity = member.presence.activities;
     let user = member.user;
+    let status = member.presence.status;
 
-    let data = {success:true,message:"Founded user!",data:{member,user,activity}};
-
-    return res.send(data);
+    return res.send({success:true,message:"Founded user!",data:{member,status,user,activity}});
 });
 
 module.exports = app;

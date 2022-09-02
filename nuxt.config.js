@@ -39,5 +39,9 @@ export default {
 
   serverMiddleware: [
     {path:'/api/',handler:"~/api/index.js"},
-  ]
+  ],
+
+  server: {
+    port: 3131
+  }
 }
