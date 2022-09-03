@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin:"*"
+    origin:false
 }))
 
 app.get('/users/:id',async(req,res) => {

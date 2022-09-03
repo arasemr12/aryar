@@ -1,7 +1,7 @@
 <template>
-    <div style="width:100%; height:100%;">
+    <div class="w-full h-full">
         <navbar/>
-        <main>
+        <main class="w-full h-full flex flex-col items-center justify-center">
             <Nuxt/>
         </main>
     </div>

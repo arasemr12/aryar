@@ -1,8 +1,8 @@
 <template>
-  <div class="main">
-    <h2>Aryar example.</h2>
-    <pre>
-      <code class="language-javascript">(async() => {
+  <div class="flex flex-col items-center w-full lg:w-2/3">
+    <h2 class="text-xl">Aryar example.</h2>
+    <pre class="w-full bg-gray-900">
+      <code class="language-javascript w-full bg-gray-900">(async() => {
   let res = await fetch("https://aryar.tk/api/users/:userid");
   let json = await res.json();
   console.log(json)
@@ -16,28 +16,3 @@ export default {
   name: 'index'
 }
 </script>
-
-<style>
-  .main{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 40px;
-  }
-
-  pre{
-    width: 100%;
-    border-radius: 5px;
-    font-family: sans-serif;
-    background: rgb(17 24 39) !important;
-  }
-
-  pre code{
-    width: 100%;
-    border-radius: 5px;
-    font-family: sans-serif;
-    font-size: 20px;
-    background: rgb(17 24 39) !important;
-  }
-</style>

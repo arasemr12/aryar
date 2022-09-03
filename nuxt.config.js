@@ -29,12 +29,19 @@ export default {
   components: true,
 
   buildModules: [
+    '@nuxt/postcss8',
   ],
 
   modules: [
   ],
 
   build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   },
 
   serverMiddleware: [

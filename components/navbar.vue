@@ -1,9 +1,9 @@
 <template>
-    <nav>
-        <div class="nav-logo">
-            <h1>ARYAR</h1>
+    <nav class="py-6 px-6 flex flex-row items-center gap-10 bg-black/30 fixed w-full backdrop:blur-sm border-b-2 border-gray-800">
+        <div>
+            <nuxt-link to="/" class="text-2xl font-bold">ARYAR</nuxt-link>
         </div>
-        <div class="nav-content">
+        <div class="flex flex-row items-center gap-5">
             <nuxt-link class="navlink" to="/">Home</nuxt-link>
             <nuxt-link class="navlink" to="/docs">Docs</nuxt-link>
         </div>
@@ -15,26 +15,3 @@ export default {
     name:'navbar'
 }
 </script>
-
-<style>
-    nav{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 20px 20px;
-        background: rgba(0,0,0,0.2);
-        border-bottom: 2px solid rgb(31 41 55);
-        /*rgb(31 41 55) */
-        position: fixed;
-        backdrop-filter: blur(5px);
-        gap: 20px;
-    }
-
-    nav .nav-content{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-</style>
